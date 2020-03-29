@@ -1,0 +1,69 @@
+
+\chapter{premier chapitre}
+
+super chapitre !
+
+\section{Notations \& glossaire}
+
+On définit $\Delta$ comme la latence du pipeline (activer les notations dans le Makefile).
+\nomenclature{$\Delta$}{Latence du pipeline}
+
+utiliser les {\id} du glossaire.
+
+\section{Références}
+
+citer des références~\cite{Aksoy2012OAM}.
+
+\section{Figure}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=14cm]
+{images/pic1.jpg}
+\caption{Fig1.\label{fig:fig1}}
+\end{center}
+\end{figure}
+
+super figure~\ref{fig:fig1}.
+
+\section{Tableau}
+
+\begin{table}
+\begin{center}
+\begin{scriptsize}
+
+\begin{tabular}{|l|c||r|r|r|r|r|r|}
+\hline 
+\multicolumn{2}{|r||}{$\Delta = $} & \multicolumn{1}{c|}{\multirow{2}{*}{2}} & \multicolumn{1}{c|}{\multirow{2}{*}{4}} & \multicolumn{1}{c|}{\multirow{2}{*}{8}} & \multicolumn{1}{c|}{\multirow{2}{*}{16}} & \multicolumn{1}{c|}{\multirow{2}{*}{32}} & \multicolumn{1}{c|}{\multirow{2}{*}{64}} \tabularnewline 
+\cline{1-2} 
+\multicolumn{1}{|c|}{Kernel} & depth & ~   & ~  & ~  & ~  & ~  & ~  \tabularnewline 
+\hline 
+\hline 
+\multirow{3}{*}{Prodmat}  & 1 & 2 & 2 & 3 & 3 & 3 & 2 \tabularnewline 
+~ &  2 & 9 & 11 & 20 & 82 & 657 & 7350 \tabularnewline 
+~ &  3 & 23 & 45 & 222 & 2089 & 27250 & 469139 \tabularnewline 
+\hline 
+\multirow{2}{*}{BBFIR} & 1 & 3 & 4 & 3 & 3 & 3 & 3 \tabularnewline 
+~ & 2 & 34 & 74 & 189 & 1057 & 15013 & 362109 \tabularnewline 
+\hline 
+\multirow{3}{*}{Jacobi}  & 1 & 1 & 1 & 1 & 1 & 1 & 1 \tabularnewline 
+~ &  2 & 7 & 11 & 52 & 442 & 5156 & 78068 \tabularnewline 
+~ &  3 & 11 & 20 & 80 & 603 & 6478 & 92093 \tabularnewline 
+\hline 
+\multirow{3}{*}{FW}  & 1 & 1 & 1 & 1 & 1 & 1 & 1 \tabularnewline 
+~ &  2 & 6 & 10 & 42 & 358  & 4335 & 66184 \tabularnewline 
+~ &  3 & 8 & 15 & 58 & 465 & 5336 & 76615 \tabularnewline 
+\hline 
+\multirow{3}{*}{QRC} &  1 & 1 & 1 & 1 & 1 & 1 & 1 \tabularnewline 
+~ &  2 & 7 & 9 & 18 & 76 & 615 & 7019 \tabularnewline 
+~ &  3 & 11 & 15 & 48 & 413 & 5237 & 80844 \tabularnewline 
+\hline 
+\end{tabular}
+
+\end{scriptsize}
+\caption{Tab1}
+\label{tab:tab1}
+\end{center}
+\end{table}
+
+super tableau~\ref{tab:tab1}.

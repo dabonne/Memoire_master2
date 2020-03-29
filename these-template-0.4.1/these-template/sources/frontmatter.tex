@@ -1,0 +1,42 @@
+
+\loadgeometry{include}
+\addtocounter{page}{-1}
+\thispagestyle{empty}
+\begin{center}
+\includegraphics[width=\textwidth]{miscpages/title.pdf}
+\end{center}
+\newpage\thispagestyle{empty}\addtocounter{page}{-1}
+\loadgeometry{normalinverse}
+% \addtocounter{page}{-1}
+\ifthenelse {\equal{\ISDEF}{0}}
+{} {
+% ~\newpage\thispagestyle{empty}\addtocounter{page}{-1}
+~\newpage\thispagestyle{empty}\addtocounter{page}{-1}
+%%  une page de citation (pas indispensable)
+% \vspace{\stretch{1}}
+% \vspace{0.5\linewidth}
+\begin{flushright}
+  %\emph{No physical quantity can continue to change exponentially forever. Your job is delaying forever.}\\
+  \emph{la citation , voir www.supercitations.com}\\
+  par bob
+\end{flushright}
+\vspace{\stretch{2}}
+
+%% Encore une page blanche pour que les remerciements arrivent
+%%  sur une page impaire
+
+\newpage\thispagestyle{empty}\addtocounter{page}{-1}
+~\newpage\thispagestyle{empty}\addtocounter{page}{-1}
+
+%\remerciements
+\section*{Remerciements}
+%\remerciements{Il faut vraiment que je dise merci ? :o)}
+%% vous n'êtes pas obligés d'utiliser cette commande
+%% mais elle vous donnera une idée de la chose
+\remerciements
+
+\newpage\thispagestyle{empty}\addtocounter{page}{-1}
+}
+
+\loadgeometry{normal}
+% \addtocounter{page}{1}
