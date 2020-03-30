@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Table des mati\`eres}{1}{chapter*.1}
+\contentsline {chapter}{Introduction}{2}{chapter*.2}
+\contentsline {chapter}{Bibliographie}{3}{appendix*.3}
